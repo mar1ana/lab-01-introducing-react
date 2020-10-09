@@ -1,13 +1,13 @@
-// 1) Import React
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import {Container} from 'react-bootstrap';
+import Styles from './styles';
 
-
-// 2) Define our component function
-const Greeting = () => {
-  // 4) Must return
-  return null;
+const Greeting = ({name}) => {
+  return (
+        <Container>
+            <Styles.Header> Hey, {name}! How youuu doin'?</Styles.Header>  
+        </Container> 
+    );
 };
 
-// 3) Export our component
 export default Greeting;
